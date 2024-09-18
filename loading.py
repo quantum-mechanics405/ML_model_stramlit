@@ -1,5 +1,5 @@
-import pickle
 import streamlit as st
+import pickle
 # Load the model from the file
 with open(r'california_housing_model.pkl', 'rb') as file:
     loaded_model = pickle.load(file)
