@@ -1,13 +1,8 @@
 import pickle
-import numpy as np
 import streamlit as st
-import os
-
-
 # Load the model from the file
 with open(r'california_housing_model.pkl', 'rb') as file:
     loaded_model = pickle.load(file)
-
 st.title('Prediction of Logistic regression')
 c1, c2, c3 = st.columns([1,1,1])
 C1 = c1.number_input('MedInc',value=3.8125)
