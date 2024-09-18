@@ -1,9 +1,11 @@
 import pickle
 import numpy as np
 import streamlit as st
+import os
+
 
 # Load the model from the file
-with open(r'C:\Users\DELL\Desktop\stream lit\california_housing_model.pkl', 'rb') as file:
+with open(r'california_housing_model.pkl', 'rb') as file:
     loaded_model = pickle.load(file)
 
 st.title('Prediction of Logistic regression')
